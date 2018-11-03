@@ -3,21 +3,22 @@ body, html{
     height: 100%;
     margin: 0;
   }
-
+/*Parallax background*/
   .bground{
     background-image: url("img/polybackg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120%; 
     filter: blur(2px);
         -webkit-filter: blur(2px);
     min-height: 500px; /* for height */
     background-attachment: fixed;
     background-position: center;   
     background-repeat: no-repeat;
+    height: 120%; 
     z-index: -1;
   }
+  /*About and Contact Button*/
   .about{
       
     font-family: 'Nunito', sans-serif;
@@ -29,7 +30,7 @@ body, html{
     position: absolute;
     /*"box and text about me" */
     top: 70%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
     border-radius: 20px 20px;
     z-index: 2;
@@ -47,59 +48,61 @@ body, html{
     line-height: 2%;
     padding: 8px;
   }
+
+  /* Main Page */
   .intro{   
     font-family: 'Nunito', sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     color: rgba(8, 23, 27, 0.932);  
     font-size: 2em;
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 46.5%;
     transform: translate(-40%, -50%);
     padding: 1px;
     text-align: center;
-  } 
+  }
 
-  #about-me{
-      background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px; /* for height */
-    background-attachment: fixed;
-    background-position: center;   
-    background-repeat: no-repeat;
-    z-index: -1;
-    height: 100%;
-    background-color: rgba(198, 248, 240, 0.527);
+  /*Container About Page*/
+  .cont{
+    height: 1000px;
+    background-color:rgb(228, 228, 228);
+    font-size: 0px;
+  }
+     /*About Page*/
+      .cont-about{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        color: rgba(8, 23, 27, 0.932); 
+        height: 1000px;
+        background-color:rgb(228, 228, 228);
+        font-size: 20px;
+     }
+      /* About Page - descriptions */
+      .h2cyril{
+        top: 110%;
+        left: 36%;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        position: absolute;
+        grid-template-columns: auto auto auto;
+        font-weight: 100;
+        display: grid;
+        padding: 100px;
 
-}
-#about-cyril{
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200;
-    color: rgba(29, 52, 58, 0.932);  
-    font-size: 2em;
-    position: absolute;
-    top: 1000px;  
-}
- #contact-me{
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 500px; /* for height */
-  background-attachment: fixed;
-  background-position: center;   
-  background-repeat: no-repeat;
-  z-index: -1;
-  height: 100%;
-  background-color: rgba(69, 99, 94, 0.527);
-
-}
-.container-contact{
-  font-family: 'Nunito', sans-serif;
-  color: rgba(8, 23, 27, 0.932);  
-  font-size: 2em; 
-  font-weight: 200;
-  position: absolute;
-  top: 2000px;
-  
-} 
+      }
+      .container-about {
+        position: absolute;
+        grid-template-columns: auto auto auto;
+        font-weight: 100;
+        display: grid;
+        top: 130%;
+        padding: 100px;
+     }
+     .grid-item {
+       
+       font-weight: 100;
+       padding: 20px;
+       font-size: 20px;
+       text-align: center;
+    }
